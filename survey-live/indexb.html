@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://newtwork.space/ -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Survey</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.0/feather.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+  <script src="./js/script.js"></script>
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+  <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6LfXuZMjAAAAAHeSBC33Cv2G6O9E6AtNeWKBTLo-"></script>
+
+
+
+</head>
+
+<body>
+  <header>
+
+    <img class="logo" src="images/1254logo.svg" alt="logo">
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#experts">Our Experts</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#about-us">About us</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div class="container-main">
+
+    <!-- Start of Question Containers -->
+    <div class="question-container" id="que-1">
+      <div class="row">
+        <div class="title d-flex justify-content-center">
+          <div>
+            <p class="text-center">1. People say that I'm confident.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="custom-radios d-flex align-items-center justify-content-between question-container-row">
+          <div class=" p-2 rate-label">Not at all</div>
+          <div class="d-flex align-items-center justify-content-between p-3 question-container-main-row">
+
+            <div>
+              <input type="radio" id="row-0-color-1" name="color[0]" value="1" class="choice">
+              <label for="row-0-color-1">
+                <span>
+                  1
+                </span>
+              </label>
+            </div>
+
+            <div>
+              <input type="radio" id="row-0-color-2" name="color[0]" value="2" class="choice">
+              <label for="row-0-color-2">
+                <span>
+                  2
+                </span>
+              </label>
+            </div>
+
+            <div>
+              <input type="radio" id="row-0-color-3" name="color[0]" value="3" class="choice">
+              <label for="row-0-color-3">
+                <span>
+                  3
+                </span>
+              </label>
+            </div>
+
+            <div>
+              <input type="radio" id="row-0-color-4" name="color[0]" value="4" class="choice">
+              <label for="row-0-color-4">
+                <span>
+                  4
+                </span>
+              </label>
+            </div>
+            <div>
+              <input type="radio" id="row-0-color-5" name="color[0]" value="5" class="choice">
+              <label for="row-0-color-5">
+                <span>
+                  5
+                </span>
+              </label>
+            </div>
+
+          </div>
+          <div class="p-2 rate-label">Fully agree</div>
+
+        </div>
+      </div>
+
+      <div class="d-flex mb-3 pt-1">
+        <div class="me-auto p-2 mob-rate-label">Not at all</div>
+        <div class="p-2 mob-rate-label">Fully</div>
+      </div>
+    </div>
+    <!-- End of Question Containers -->
+
+  </div>
+
+  <div class="">
+    <div class="data-container p-0">
+      <!-- <div class=" center"> -->
+      <form>
+        <h3>Claim your results</h3>
+        <input type="text" placeholder="Your Name" id="name">
+        <input type="text" placeholder="Your Email" id="email">
+        <button id="submit">Get results</button>
+      </form>
+      <!-- </div> -->
+    </div>
+  </div>
+
+
+  <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#successModal">
+        Success
+    </button> -->
+  <!-- 
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#errorModal">
+        Error
+    </button> -->
+
+  <!-- Sucess Modal -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
+    style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal__icon modal__icon--success">
+          <span data-feather="check">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-check">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+        </div>
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalCenterTitle"></h1>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body d-flex flex-column">
+          <div class="body-title d-flex justify-content-center">
+            <p><strong>Thank you</strong></p>
+          </div>
+
+          <div class="body-results px-5">
+            <p class="py-1" style="text-align: center;">
+              <span><strong>We have sent result on your email.</strong></span><br />
+              <span>Please check the spam folder.</span>
+            </p>
+
+
+          </div>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="button" class="btn" data-bs-dismiss="modal">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Error Modal -->
+  <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="exampleModalCenterTitle" style="display: none;"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal__icon modal__icon--error">
+          <span data-feather="x">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-x">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </span>
+        </div>
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalCenterTitle"></h1>
+        </div>
+        <div class="modal-body d-flex flex-column">
+          <div class="body-title d-flex justify-content-center">
+            <p><strong>Error</strong></p>
+          </div>
+
+          <div class="error-message-con">
+            <p>Please answer question number : <span class="error-message bold-800">Error</span></p>
+          </div>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <footer class="footer">
+
+    <div class="container">
+      <div="footer-row">
+        <div class="footer-column">
+          <h4>ACADEMY</h4>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our Experts</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>COURSES</h4>
+          <ul>
+            <li><a href="#">Joyful Leadership</a></li>
+            <li><a href="#">Impact Entrepreneurship</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>CONTACT</h4>
+          <ul>
+            <li><a href="#">academy@oazainfo.hr</a></li>
+            <li><a href="#">+385 (1) 550 3010</a></li>
+            <li><a href="#">Mailbox: Frane Petrića 5,</a></li>
+            <li><a href="#">10 000 Zagreb, Croatia</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>SOCIAL MEDIA</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+    </div>
+    </div>
+
+  </footer>
+
+
+
+
+</body>
+
+</html>
